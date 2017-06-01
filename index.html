@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>小北</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="小北,小北先森,小北的故事,国产动漫,年轻人,青年,爱情,姑娘,故事">
+<meta property="og:type" content="website">
+<meta property="og:title" content="小北">
+<meta property="og:url" content="http://menghuan758.github.io/index.html">
+<meta property="og:site_name" content="小北">
+<meta property="og:description" content="小北,小北先森,小北的故事,国产动漫,年轻人,青年,爱情,姑娘,故事">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="小北">
+<meta name="twitter:description" content="小北,小北先森,小北的故事,国产动漫,年轻人,青年,爱情,姑娘,故事">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">小北</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">我在深秋，与你相遇</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <!--
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">首页</a>
+        
+          <a class="main-nav-link" href="/archives">文章</a>
+        
+          <a class="main-nav-link" href="/about">关于</a>
+        
+      </nav>
+      -->
+      <nav id="sub-nav">
+        
+        <!--<a id="nav-search-btn" class="nav-icon" title="Search"></a>-->
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://menghuan758.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="content">
+        <div class="outer outer-content">
+          <section id="main">
+  
+    <article id="post-小米路由器搭建git服务" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/01/08/小米路由器搭建git服务/" class="article-date">
+  <time datetime="2016-01-07T16:00:00.000Z" itemprop="datePublished">2016-01-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/嵌入式/">嵌入式</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/01/08/小米路由器搭建git服务/">小米路由器搭建git服务</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><p>首先，我要声明，本次尝试失败了。没能在小米路由器上成功搭建对外开放的git服务。但希望我的尝试对你有所启发。本次并未尝试重刷第三方路由系统，使用小米路由系统开发版。具体ROM请访问：<a href="http://www1.miwifi.com/miwifi_download.html" target="_blank" rel="external">小米路由官网下载页</a> </p>
+<ul>
+<li>设备：小米路由器第二代</li>
+<li>操作平台：OS X 系统</li>
+</ul>
+<p>开始之前，请确认您已打开路由器SSH。具体方法请访问：<a href="http://www1.miwifi.com/miwifi_open.html" target="_blank" rel="external">小米路由器开发页</a><br>并且可以通过相关工具进行连接。<br>注：开启SSH过程中发生问题的话，请严格执行官方给出的步骤。</p>
+<p>登陆SSH后，如果没有写入权限，可以执行以下命令，以读写权限重新挂载根目录。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mount -o remount rw /</div></pre></td></tr></table></figure></p>
+<p>失败原因：我这只能使用二级运营商宽带，鹏博士宽带，没有对外开发端口，无法实现内网至外网穿透，故以失败告终。<br>具体开放端口查询方式，请自行通过关键字搜索。<br>如若可实现外网访问，即可成功实现服务，具体方案请继续阅读。</p>
+        
+      
+    </div>
+    <!--<footer class="article-footer">
+      <a data-url="http://menghuan758.github.io/2016/01/08/小米路由器搭建git服务/" data-id="cj3e267g40007dqfyd2gcwue7" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/openwrt/">openwrt</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小米路由器/">小米路由器</a></li></ul>
+
+    </footer>-->
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-常用算法(js操作)" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/04/23/常用算法(js操作)/" class="article-date">
+  <time datetime="2015-04-22T16:00:00.000Z" itemprop="datePublished">2015-04-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/23/常用算法(js操作)/">常用算法(js操作)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="异步加载js"><a href="#异步加载js" class="headerlink" title="异步加载js"></a>异步加载js</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">loadScript</span> (<span class="params">url, callback</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> script = <span class="built_in">document</span>.createElement(<span class="string">"script"</span>)</div><div class="line">    script.type = <span class="string">"text/javascript"</span>;</div><div class="line">    <span class="keyword">if</span> (script.readyState)&#123; <span class="comment">//IE</span></div><div class="line">        script.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">            <span class="keyword">if</span> (script.readyState == <span class="string">"loaded"</span> || script.readyState == <span class="string">"complete"</span>) &#123;</div><div class="line">                script.onreadystatechange = <span class="literal">null</span>;</div><div class="line">                callback();</div><div class="line">            &#125;</div><div class="line">        &#125;;</div><div class="line">    &#125; <span class="keyword">else</span> &#123; <span class="comment">//Others: Firefox, Safari, Chrome, and Opera</span></div><div class="line">        script.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">            callback();</div><div class="line">        &#125;;</div><div class="line">    &#125;</div><div class="line">    script.src = url;</div><div class="line">    <span class="built_in">document</span>.body.appendChild(script);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        
+      
+    </div>
+    <!--<footer class="article-footer">
+      <a data-url="http://menghuan758.github.io/2015/04/23/常用算法(js操作)/" data-id="cj3e267g6000bdqfyd6k470fi" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>-->
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Linux手记(centos)" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/04/01/Linux手记(centos)/" class="article-date">
+  <time datetime="2015-03-31T16:00:00.000Z" itemprop="datePublished">2015-04-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/01/Linux手记(centos)/">Linux手记(centos)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="shell指令"><a href="#shell指令" class="headerlink" title="shell指令"></a>shell指令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">切换用户：su</div><div class="line">以管理员身份：sudo</div><div class="line">显示文件内容：ls -sail mysql*(关键字过滤)</div><div class="line">创建文件：touch a1</div><div class="line">编辑文件：vi a1</div><div class="line">复制文件：cp <span class="built_in">source</span> destination</div><div class="line">重命名（移动）：mv A B</div><div class="line">删除：rm -i A</div><div class="line">创建目录：mkdir A</div><div class="line">删除目录：rmdir A（A必须为空）如果不为空则需采用参数删除</div><div class="line">    参数删除：</div><div class="line">        rm -r A 递归删除目录</div><div class="line">        rm -rf A 无警告删除</div><div class="line">文件类型：文本文件/可执行文件/数据文件</div><div class="line">    查看类型：</div><div class="line">        <span class="built_in">stat</span> A（详细信息）</div><div class="line">        file A（文件类型）</div><div class="line">查看整个文件：</div><div class="line">    cat A -n（加行号）</div><div class="line">    more [ENTER（下一行）]/less</div></pre></td></tr></table></figure>
+        
+      
+    </div>
+    <!--<footer class="article-footer">
+      <a data-url="http://menghuan758.github.io/2015/04/01/Linux手记(centos)/" data-id="cj3e267ft0002dqfyipmyp2jo" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bash/">bash</a></li></ul>
+
+    </footer>-->
+  </div>
+  
+</article>
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">奈特</a>
+    </nav>
+  
+</section>
+          
+        </div>
+        <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      All rights reserved. <a href="/">小北</a> © 2017 <br>
+      使用 <a href="http://hexo.io/" target="_blank">Hexo</a> 强力驱动
+    </div>
+  </div>
+</footer>
+      </div>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">文章</a>
+  
+    <a href="/about" class="mobile-nav-link">关于</a>
+  
+</nav>
+    
+
+<script src="/js/jquery-1.9.1.min.js"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>javascript-核心 | 小北</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="数组1234567891011121314var a=[1,2,3];a.join();//将数组中所有元素都转化为字符串并连接在一起，参数作为分隔符。a.reverse();//将数组中的元素点到顺序，返回逆序数组。a.sort();//将数组中的元素排序并返回排序后的数组。a.concat();//创建并返回一个新数组，其中返回数组包括a中元素和参数。a.slice();//方法返回制定数组的">
+<meta name="keywords" content="javascript,前端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript-核心">
+<meta property="og:url" content="http://menghuan758.github.io/2015/03/11/javascript-核心/index.html">
+<meta property="og:site_name" content="小北">
+<meta property="og:description" content="数组1234567891011121314var a=[1,2,3];a.join();//将数组中所有元素都转化为字符串并连接在一起，参数作为分隔符。a.reverse();//将数组中的元素点到顺序，返回逆序数组。a.sort();//将数组中的元素排序并返回排序后的数组。a.concat();//创建并返回一个新数组，其中返回数组包括a中元素和参数。a.slice();//方法返回制定数组的">
+<meta property="og:updated_time" content="2017-06-01T06:31:44.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="javascript-核心">
+<meta name="twitter:description" content="数组1234567891011121314var a=[1,2,3];a.join();//将数组中所有元素都转化为字符串并连接在一起，参数作为分隔符。a.reverse();//将数组中的元素点到顺序，返回逆序数组。a.sort();//将数组中的元素排序并返回排序后的数组。a.concat();//创建并返回一个新数组，其中返回数组包括a中元素和参数。a.slice();//方法返回制定数组的">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">小北</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">我在深秋，与你相遇</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <!--
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">首页</a>
+        
+          <a class="main-nav-link" href="/archives">文章</a>
+        
+          <a class="main-nav-link" href="/about">关于</a>
+        
+      </nav>
+      -->
+      <nav id="sub-nav">
+        
+        <!--<a id="nav-search-btn" class="nav-icon" title="Search"></a>-->
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://menghuan758.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="content">
+        <div class="outer outer-content">
+          <section id="main"><article id="post-javascript-核心" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/03/11/javascript-核心/" class="article-date">
+  <time datetime="2015-03-10T16:00:00.000Z" itemprop="datePublished">2015-03-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      javascript-核心
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</div><div class="line">a.join();<span class="comment">//将数组中所有元素都转化为字符串并连接在一起，参数作为分隔符。</span></div><div class="line">a.reverse();<span class="comment">//将数组中的元素点到顺序，返回逆序数组。</span></div><div class="line">a.sort();<span class="comment">//将数组中的元素排序并返回排序后的数组。</span></div><div class="line">a.concat();<span class="comment">//创建并返回一个新数组，其中返回数组包括a中元素和参数。</span></div><div class="line">a.slice();<span class="comment">//方法返回制定数组的一个片段或子数组，通过下标作为参数截取。</span></div><div class="line">a.splice();<span class="comment">//在数组中插入或删除元素。</span></div><div class="line">a.push();<span class="comment">//在数组的尾部添加一个或多个元素。</span></div><div class="line">a.pop();<span class="comment">//在数组尾部删除一个元素。</span></div><div class="line">a.unshift();<span class="comment">//在数组的头部添加一个或多个元素。</span></div><div class="line">a.shift();<span class="comment">//在数组的头部删除一个元素。</span></div><div class="line">a.toString();<span class="comment">//将数组每个元素转化为字符串</span></div><div class="line">最后一个字符串转换数组操作：</div><div class="line"><span class="string">"1|2|3|4"</span>.split(<span class="string">"|"</span>);<span class="comment">//将字符串按要求分割为数组。</span></div></pre></td></tr></table></figure>
+<p>未完待续…</p>
+
+      
+    </div>
+    <!--<footer class="article-footer">
+      <a data-url="http://menghuan758.github.io/2015/03/11/javascript-核心/" data-id="cj3e267g9000ddqfyagij1c2n" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+
+    </footer>-->
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/04/01/Linux手记(centos)/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Linux手记(centos)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/02/17/HTTP-Status-Code/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">HTTP-Status-Code</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <!-- 多说评论框 start -->
+  <div class="ds-thread" data-thread-key="post-javascript-核心" data-title="javascript-核心" data-url="http://menghuan758.github.io/2015/03/11/javascript-核心/"></div>
+  <!-- 多说评论框 end -->
+  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"xbinnng"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+  <!-- 多说公共JS代码 end -->
+</section>
+</section>
+          
+        </div>
+        <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      All rights reserved. <a href="/">小北</a> © 2017 <br>
+      使用 <a href="http://hexo.io/" target="_blank">Hexo</a> 强力驱动
+    </div>
+  </div>
+</footer>
+      </div>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">文章</a>
+  
+    <a href="/about" class="mobile-nav-link">关于</a>
+  
+</nav>
+    
+
+<script src="/js/jquery-1.9.1.min.js"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>

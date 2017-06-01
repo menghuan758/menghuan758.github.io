@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>小北</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="小北,小北先森,小北的故事,国产动漫,年轻人,青年,爱情,姑娘,故事">
+<meta property="og:type" content="website">
+<meta property="og:title" content="小北">
+<meta property="og:url" content="http://menghuan758.github.io/page/3/index.html">
+<meta property="og:site_name" content="小北">
+<meta property="og:description" content="小北,小北先森,小北的故事,国产动漫,年轻人,青年,爱情,姑娘,故事">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="小北">
+<meta name="twitter:description" content="小北,小北先森,小北的故事,国产动漫,年轻人,青年,爱情,姑娘,故事">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">小北</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">我在深秋，与你相遇</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <!--
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">首页</a>
+        
+          <a class="main-nav-link" href="/archives">文章</a>
+        
+          <a class="main-nav-link" href="/about">关于</a>
+        
+      </nav>
+      -->
+      <nav id="sub-nav">
+        
+        <!--<a id="nav-search-btn" class="nav-icon" title="Search"></a>-->
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://menghuan758.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="content">
+        <div class="outer outer-content">
+          <section id="main">
+  
+    <article id="post-javascript-oop" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/12/03/javascript-oop/" class="article-date">
+  <time datetime="2014-12-02T16:00:00.000Z" itemprop="datePublished">2014-12-03</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/03/javascript-oop/">javascript-对象</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="工厂模式创建对象"><a href="#工厂模式创建对象" class="headerlink" title="工厂模式创建对象"></a>工厂模式创建对象</h2><p>工厂模式构建对象的方法就是常规构建对象思维。</p>
+<p>使用函数进行封装，参数即作为对象的属性传入。</p>
+<p>最后返回。如下例： </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">creatDog</span> (<span class="params">age, size</span>) </span>&#123;</div><div class="line">   <span class="keyword">var</span> D = &#123;&#125;;</div><div class="line">   D.age = age;</div><div class="line">   D.size = size;</div><div class="line">   D.toAge = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">     alert(<span class="keyword">this</span>.age);</div><div class="line">   &#125;;</div><div class="line">   <span class="keyword">return</span> D;</div><div class="line">&#125;</div><div class="line"> </div><div class="line"><span class="keyword">var</span> dog1 = creatDog(<span class="number">10</span>, <span class="number">100</span>);</div><div class="line"><span class="keyword">var</span> dog2 = creatDog(<span class="number">20</span>, <span class="number">11</span>);</div></pre></td></tr></table></figure>
+<p>创建对象 调用函数，即可。</p>
+<p>另外说一句，该函数使用构造函数模式生成时，构造函数在不返回值的情况下，默认会返回新对象实例。而通过在构造函数的末尾添加一个return语句，可以重写调用构造函数时返回的值。如例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> dogs = <span class="keyword">new</span> creatDog(<span class="number">11</span>, <span class="number">23</span>);</div></pre></td></tr></table></figure>
+        
+      
+    </div>
+    <!--<footer class="article-footer">
+      <a data-url="http://menghuan758.github.io/2014/12/03/javascript-oop/" data-id="cj3e267g20006dqfy0inonde8" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+
+    </footer>-->
+  </div>
+  
+</article>
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/2/">拜可</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+    </nav>
+  
+</section>
+          
+        </div>
+        <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      All rights reserved. <a href="/">小北</a> © 2017 <br>
+      使用 <a href="http://hexo.io/" target="_blank">Hexo</a> 强力驱动
+    </div>
+  </div>
+</footer>
+      </div>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">文章</a>
+  
+    <a href="/about" class="mobile-nav-link">关于</a>
+  
+</nav>
+    
+
+<script src="/js/jquery-1.9.1.min.js"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>
